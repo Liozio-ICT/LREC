@@ -18,11 +18,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
+from django.views.defaults import page_not_found 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainapp.urls'))
 ]
-handler404 = 'LiozioMainApp.views.error_404_view'
+handler404 = 'mainapp.views.error_404_view'
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
