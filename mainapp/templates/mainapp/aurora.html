@@ -2,21 +2,13 @@
 {% load static %}
 
     {% block meta %}
-    <meta name="DC.title" content="LREC - Sustainable and Communal Living in Ibadan, Nigeria">
-    <meta name="DC.description" content="LREC is a real estate development company under The Liozio Companies, dedicated to building sustainable and affordable housing solutions in Ibadan.">
-    <link rel="canonical" href="https://www.lioziorealestate.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LREC - Affordable and Sustainable Housing in Ibadan">
-    <meta name="twitter:description" content="LREC builds houses for sale that reflect sustainability and communal living. Explore our innovative projects and commitment to redefining housing in Ibadan.">
-    <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1732090911/lrec_original_wid8rc.png">
-    <meta name="twitter:site" content="@LiozioCompanies">
-    <link rel="alternate" href="https://www.lioziorealestate.com" hreflang="en">
-    
+        {% include "mainapp/includes/_meta.html" %}
     {% endblock meta %}
 
     {% block internal_styles %}
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="icon" href="{% static "images/lrec_original.png" %}">
 
     <link rel="stylesheet" href="{% static "css/stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %}">
@@ -27,7 +19,7 @@
     <link rel="stylesheet" href="{% static "css/tiny-slider.css" %}">
     <link rel="stylesheet" href="{% static "js/lightbox/dist/css/lightbox.min.css" %}">
     <link rel="stylesheet" href="{% static "css/aos.css" %}">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/aurora.css" %}">
     {% endblock internal_styles %}
 {% block content %}
 <body>
@@ -80,7 +72,7 @@
         <div class="container-xl">
             <a class="navbar-brand align-items-center" href="#">
                 <span class="">
-                    <img style="width:7rem;height:7rem; object-fit:contain;margin:0 90px;" src="{% static "images/lrec.png" %}" alt=""><span class="text-center">LREC <small>Liozio Real Estate Development Company</small></span>
+                    <span class="text-center" style="font-family: 'Cookie', serif;">The Agnes - Aurora </span> <small>Liozio Real Estate Development Company</small>
                 </span>
                 {% comment %} LREDC <small>Real Estate Agency</small> {% endcomment %}
             </a>
@@ -92,10 +84,9 @@
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Properties</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
-                <p class="mb-0"><a href="#" class="btn btn-primary rounded">Buy A House</a></p>
+                <p class="mb-0"><a href="#" class="btn btn-primary rounded">Buy Aurora</a></p>
             </div>
         </div>
     </nav>
@@ -111,7 +102,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-xl-6">
                                     <div class="text text-center" data-aos="fade-up" data-aos-duration="1000">
-                                        <h2><strong class="text-secondary"> LREC </strong> <br> Your Gateway to Luxurious Living</h2>
+                                        <h2><strong class="text-secondary" style="font-family: 'Cookie', serif;"> Aurora </strong> <br> Where Elegance Meets Comfort</h2>
                                         <p class="mb-5">Discover premium properties that fit your lifestyle. From modern apartments to elegant villas, LREC brings your dream home within reach.</p>
                                         <p><a href="#" class="btn btn-primary px-5 py-3">Explore Properties<span
                                                     class="ion ion-ios-arrow-round-forward"></span></a></p>

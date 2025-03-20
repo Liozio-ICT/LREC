@@ -10,7 +10,6 @@ def error_404_view(request, exception):
     return render(request, '404.html')
 
 def index(request):
-    
     return render(request, 'mainapp/index.html')
 
 def about(request):
@@ -21,3 +20,36 @@ def contact(request):
 
 def services(request):
     pass
+
+def agnes(request):
+        context  = {
+        "unit_title" : "The Agnes"
+    }
+        return render(request, 'mainapp/agnes.html',context)
+
+def ivy(request):
+    context  = {
+        "unit_title" : "Ivy"
+    }
+    return render(request, 'mainapp/ivy.html',context)
+
+def primrose(request):
+    context  = {
+        "unit_title" : "Primrose"
+    }
+    return render(request, 'mainapp/primrose.html',context)
+
+def aurora(request):
+    context  = {
+        "unit_title" : "Aurora"
+    }
+    return render(request, 'mainapp/aurora.html',context)
+
+def emerald(request):
+    context  = {
+        "unit_title" : "Emerald"
+    }
+    return render(request, 'mainapp/emerald.html',context)
+
+def temp(request):
+    return render(request, 'mainapp/temp.html')
