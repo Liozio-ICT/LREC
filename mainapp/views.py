@@ -29,25 +29,29 @@ def agnes(request):
 
 def ivy(request):
     context  = {
-        "unit_title" : "Ivy"
+        "unit_title" : "Ivy",
+        "unitname" : "ivy"
     }
     return render(request, 'mainapp/ivy.html',context)
 
 def primrose(request):
     context  = {
-        "unit_title" : "Primrose"
+        "unit_title" : "Primrose",
+        "unitname" : "primrose"
     }
     return render(request, 'mainapp/primrose.html',context)
 
 def aurora(request):
     context  = {
-        "unit_title" : "Aurora"
+        "unit_title" : "Aurora",
+        "unitname" : "aurora"
     }
     return render(request, 'mainapp/aurora.html',context)
 
 def emerald(request):
     context  = {
-        "unit_title" : "Emerald"
+        "unit_title" : "Emerald",
+        "unitname" : "emerald"
     }
     return render(request, 'mainapp/emerald.html',context)
 

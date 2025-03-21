@@ -1,0 +1,81 @@
+{% load static %}
+<footer class="ftco-footer">
+    <div class="container-xl">
+        <div class="row mb-5 pb-5 justify-content-between">
+            <div class="col-md-6 col-lg">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2 logo d-flex">
+                        <a class="navbar-brand align-items-center" href="#">
+                            <img style="width:7rem;height:7rem; object-fit:contain" src="{% static "images/lrec.png" %}" alt=""><span class="">LREC <small>Liozio Real Estate Development Company</small></span>
+                        </a>
+                    </h2>
+                    <p>At LREC, we are dedicated to transforming communities by developing affordable, sustainable, and communal living spaces that inspire prosperity and partnership.
+                    </p>
+                    <ul class="ftco-footer-social list-unstyled mt-2">
+                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Explore Other Units</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url "primrose" %}"><span class="fa fa-chevron-right mr-2"></span>Primrose</a></li>
+                        <li><a href="{% url "ivy" %}"><span class="fa fa-chevron-right mr-2"></span>Ivy</a></li>
+                        <li><a href="{% url "aurora" %}"><span class="fa fa-chevron-right mr-2"></span>Aurora</a></li>
+                        <li><a href="{% url "emerald" %}"><span class="fa fa-chevron-right mr-2"></span>Emerald</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Company</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                        {% comment %} <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li> {% endcomment %}
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Quick Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms &amp; Conditions</a>
+                        </li>
+                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Support Center</a></li>
+                        {% comment %} <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Press Info</a></li> {% endcomment %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">No 3, Chief Wole Olanipekun (SAN) Crescent, Agodi GRA, Ibadan </span></li>
+                            <li><a href="tel:+2349028222292"><span class="icon fa fa-phone"></span><span class="text">09028222292</span></a></li>
+                            <li><a href="mailto:lredc@liozio.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text"><span class="">lredc@liozio.com</span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0 py-5 bg-darken">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0" style="color: rgba(255,255,255,.5); font-size: 13px;">Copyright &copy; LREC
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Developed  by <a
+                            href="https://github.com/Liozio-ICT" target="_blank" rel="nofollow noopener">Liozio-ICT</a>
+                    </p>        
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
