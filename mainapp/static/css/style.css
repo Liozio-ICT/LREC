@@ -2810,7 +2810,10 @@ textarea.form-control {
   color: #3D69E2; }
 
 .ftco-about-section .img-2 {
-  height: 400px; }
+  height: 400px;
+  background-size: contain;
+  background-position: top;
+ }
 
 .ftco-about-section .counter-wrap {
   width: 100%; }

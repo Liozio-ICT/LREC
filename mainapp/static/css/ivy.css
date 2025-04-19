@@ -2809,8 +2809,11 @@ textarea.form-control {
 .star {
   color: #dc36ff; }
 
-.ftco-about-section .img-2 {
-  height: 400px; }
+  .ftco-about-section .img-2 {
+    height: 400px;
+    background-size: contain;
+    background-position: top;
+   }
 
 .ftco-about-section .counter-wrap {
   width: 100%; }
